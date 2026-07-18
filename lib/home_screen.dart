@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
-static const routeName = '/homeScreen';
+  static const routeName = '/homeScreen';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -11,10 +11,7 @@ static const routeName = '/homeScreen';
         backgroundColor: Color(0xFF29384D),
         appBar: AppBar(
           backgroundColor: Color(0xFF29384D),
-          title: Image.asset(
-            'assets/appbar photo.png',
-            height: 40,
-          ),
+          title: Image.asset('assets/appbar photo.png', height: 40),
         ),
         body: Container(
           padding: EdgeInsets.only(top: 150),
@@ -23,10 +20,7 @@ static const routeName = '/homeScreen';
             children: [
               Center(
                 heightFactor: 0.5,
-                child: Image.asset(
-                  'assets/home screen.png',
-                  height: 365,
-                ),
+                child: Image.asset('assets/home screen.png', height: 365),
               ),
               const SizedBox(height: 100),
               const Text(
@@ -42,13 +36,10 @@ static const routeName = '/homeScreen';
         ),
         floatingActionButton: FloatingActionButton(
           backgroundColor: Color(0xFFFFF1D4),
-          child: const Icon(
-            Icons.add,
-            color: Color(0xFF29384D),
-          ),
+          child: const Icon(Icons.add, color: Color(0xFF29384D)),
           onPressed: () {},
         ),
       ),
-    );     
+    );
   }
 }
