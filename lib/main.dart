@@ -1,16 +1,21 @@
+import 'package:contactapp/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const ContactApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ContactApp extends StatelessWidget {
+  const ContactApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('welcome to flutter'))),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: { 
+        HomeScreen.routeName: (context) => const HomeScreen(),
+      },
+      initialRoute: HomeScreen.routeName,
     );
   }
 }
