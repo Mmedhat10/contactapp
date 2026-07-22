@@ -12,9 +12,7 @@ class ContactApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: { 
-        HomeScreen.routeName: (context) => const HomeScreen(),
-      },
+      routes: {HomeScreen.routeName: (context) =>  HomeScreen()},
       initialRoute: HomeScreen.routeName,
     );
   }
